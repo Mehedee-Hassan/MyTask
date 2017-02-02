@@ -11,6 +11,8 @@
         android:src="@drawable/logo_large"
         android:layout_centerHorizontal="true"
         android:layout_margin="48dp"
+        android:scaleType="fitCenter"
+
         />
 
     <Button

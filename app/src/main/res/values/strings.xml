@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">TaskList</string>
+    <string name="show">show</string>
+    <string name="add_a_drop">Add A Drop</string>
 </resources>

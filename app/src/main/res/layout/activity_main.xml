@@ -10,44 +10,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="liquiddark.com.tasklist.MainActivity">
 
-    <ImageView
-        android:id="@+id/bucket_logo"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:src="@drawable/logo_large"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="48dp"
-    />
 
-    <Button
-        android:id="@+id/add_a_drop_button"
-
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/add_a_drop"
-        android:layout_below="@id/bucket_logo"
-        android:layout_centerHorizontal="true"
-
-
-        android:fontFamily="sans-serif-thin"
-
-        android:textSize="20sp"
-
-        android:textAllCaps="false"
-
-
-        android:layout_marginTop="100dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-
-
-        android:paddingRight="80dp"
-        android:paddingLeft="80dp"
-
-
-        android:textColor="@color/add_a_drop_bnt_txt_color"
-
-
-        />
 
 </RelativeLayout>

@@ -40,6 +40,8 @@
 
 
         android:textColor="@color/add_a_drop_bnt_txt_color"
+        android:background="@drawable/add_a_drop_bg_res"
+
 
 
         />

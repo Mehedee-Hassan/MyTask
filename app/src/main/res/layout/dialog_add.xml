@@ -4,7 +4,7 @@
 
     <TextView
         android:id="@+id/dialog_title"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/add_a_drop"
         android:layout_marginTop="@dimen/tv_title_margin_top"
@@ -15,8 +15,52 @@
 
     <ImageButton
         android:id="@+id/btn_close"
-        android:layout_width="12dp"
-        android:layout_height="12dp"
-        android:src="@drawable/ic_close"/>
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:src="@drawable/ic_close"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/dialog_title"
+        android:layout_alignBottom="@id/dialog_title"
+        android:background="@null"
+
+        />
+
+
+    <EditText
+        android:id="@+id/editT_add_drop"
+        android:layout_below="@id/dialog_title"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:hint="@string/what_is_it"
+        android:padding="16dp"
+        />
+
+    <DatePicker
+
+        android:id="@+id/dpicker_date"
+
+        android:layout_below="@id/editT_add_drop"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    </DatePicker>
+
+
+
+    <Button
+        android:id="@+id/btn_add_drop"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/dpicker_date"
+
+        android:text="@string/add_id"
+        android:textAllCaps="false"
+        />
 
 </RelativeLayout>

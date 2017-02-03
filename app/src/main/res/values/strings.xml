@@ -2,4 +2,6 @@
     <string name="app_name">TaskList</string>
     <string name="show">show</string>
     <string name="add_a_drop">Add A Drop</string>
+    <string name="what_is_it">What is It?</string>
+    <string name="add_id">Add it</string>
 </resources>

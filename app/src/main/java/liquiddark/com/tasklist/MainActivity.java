@@ -43,10 +43,16 @@ public class MainActivity extends AppCompatActivity {
         mButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                 showDialog();
             }
         });
 
+    }
+
+    private void showDialog() {
+        DialogAdd dialogAdd = new DialogAdd();
+
+        dialogAdd.show(getSupportFragmentManager(),"Add");
     }
 
     private void initElements() {

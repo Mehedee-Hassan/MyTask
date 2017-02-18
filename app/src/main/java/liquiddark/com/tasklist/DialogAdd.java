@@ -11,6 +11,10 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageButton;
 
+import io.realm.Realm;
+import io.realm.RealmConfiguration;
+import liquiddark.com.tasklist.beans.Drop;
+
 /**
  * Created by mhr on 03-Feb-17.
  */
@@ -48,8 +52,25 @@ public class DialogAdd extends DialogFragment{
 
 
     private void addAction() {
-        String actionText =  mInputWhatET.getText().toString();
+        String whatText =  mInputWhatET.getText().toString();
         long now = System.currentTimeMillis();
+
+
+
+        Realm.init(getActivity());
+        RealmConfiguration realmConfiguration = new RealmConfiguration.Builder().build();
+        Realm.setDefaultConfiguration(realmConfiguration);
+        Realm realmObject =  Realm.getDefaultInstance();
+
+        Drop drop = new Drop(whatText,now,0,false);
+        realmObject.beginTransaction();
+
+        realmObject.copyToRealm(drop);
+
+        realmObject.commitTransaction();
+
+        realmObject.close();
+
     }
 
     @Nullable
